@@ -33,4 +33,11 @@ describe('ListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should see Create button if user is admin', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const createButton = compiled.querySelector('button');
+    expect(createButton).toBeTruthy();
+    expect(createButton?.textContent).toContain('Create');
+  });
 });
