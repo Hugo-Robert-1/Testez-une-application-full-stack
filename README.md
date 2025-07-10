@@ -1,11 +1,15 @@
 # Yoga App !
 
-## Installation du projet 
- ### 1. Cloner le dépôt :
+Ce repository regroupe la partie backend et la partie frontend nécessaire au fonctionnement de l'application
+
+## Installation du projet
+### Cloner le dépôt :
   ```git clone https://github.com/Hugo-Robert-1/Testez-une-application-full-stack.git ```
- ### 2. Se placer dans le dossier du projet :
-  ```cd Testez-une-application-full-stack```
- ### 3. Installer les dépendances du projet :
+
+# Back-end
+ ### 1. Se placer dans le dossier du projet :
+  ```cd Testez-une-application-full-stack/back```
+ ### 2. Installer les dépendances du projet :
   ``mvn clean install ``
 
 ## Installer une base de données MySQL en local
@@ -31,3 +35,26 @@
  Il est aussi possible pour ce projet d'effectuer un rapport de couverture au démarrage via la commande : `` mvn clean package `` 
 
  Le rapport de couverture sera situé à l'adresse suivante : target/site/jacoco/index.html
+
+# Front-end
+ ### 1. Se placer dans le dossier du projet :
+  ```cd Testez-une-application-full-stack/front```
+ ### 2. Installer les dépendances du projet :
+  ``npm install ``
+
+## Démarrer le projet
+ Utiliser la commande : `` npm run start ``
+
+## Pour lancer les tests 
+ Utiliser la commande : `` npm run test ``
+
+## Génération d'un rapport de couverture via Jest 
+ Utiliser la commande : `` npx jest --coverage ``
+
+Un dossier coverage sera créé à la racine du projet : coverage/jest/lcov-report/app/index.html
+
+## Pour lancer les tests e2e
+ Utiliser la commande : `` npm run e2e ``
+
+## Génération d'un rapport de couverture via Cypress 
+ Utiliser la commande : `` npm run e2e:coverage ``
