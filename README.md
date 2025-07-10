@@ -49,12 +49,14 @@ Ce repository regroupe la partie backend et la partie frontend nécessaire au fo
  Utiliser la commande : `` npm run test ``
 
 ## Génération d'un rapport de couverture via Jest 
- Utiliser la commande : `` npx jest --coverage ``
+ Utiliser la commande : ``npm run test -- --coverage ``
 
 Un dossier coverage sera créé à la racine du projet : coverage/jest/lcov-report/app/index.html
 
 ## Pour lancer les tests e2e
  Utiliser la commande : `` npm run e2e ``
+
+ La commande ``npm run cypress:open `` permet d'ouvrir l'interface de Cypress pour visionner les tests e2e dans un navigateur.
 
 ## Génération d'un rapport de couverture via Cypress 
  Utiliser la commande : `` npm run e2e:coverage ``
