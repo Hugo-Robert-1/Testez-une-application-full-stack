@@ -60,4 +60,4 @@ Un dossier coverage sera créé à la racine du projet : coverage/jest/lcov-repo
 
 ## Génération d'un rapport de couverture via Cypress 
  Pour générer le rapport de couverture, il faut s'assurer que l'application soit compilée avec du code couverture (instrumentation), pour cela il faut avoir au préalable lancer la commande ``npm run cypress:run`` qui va lancer les tests e2e et compiler les résultats dans le fichier out.json situé dans le dossier .nyc_output à la racine du projet. 
- Suite à cela, utiliser la commande : `` npm run e2e:coverage `` pour générer le rapport de couverture.
+ Suite à cela, utiliser la commande : `` npm run e2e:coverage `` pour générer le rapport de couverture qui sera situé dans le dossier coverage/lcov-report/index.html
