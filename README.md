@@ -59,4 +59,5 @@ Un dossier coverage sera créé à la racine du projet : coverage/jest/lcov-repo
  La commande ``npm run cypress:open `` permet d'ouvrir l'interface de Cypress pour visionner les tests e2e dans un navigateur.
 
 ## Génération d'un rapport de couverture via Cypress 
- Utiliser la commande : `` npm run e2e:coverage ``
+ Pour générer le rapport de couverture, il faut s'assurer que l'application soit compilée avec du code couverture (instrumentation), pour cela il faut avoir au préalable lancer la commande ``npm run cypress:run`` qui va lancer les tests e2e et compiler les résultats dans le fichier out.json situé dans le dossier .nyc_output à la racine du projet. 
+ Suite à cela, utiliser la commande : `` npm run e2e:coverage `` pour générer le rapport de couverture.
